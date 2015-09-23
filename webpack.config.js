@@ -18,6 +18,11 @@ module.exports = {
     new CommonsChunkPlugin('vendor', 'vendor.js'),
     new HtmlWebpackPlugin()
   ],
+	module: {
+		loaders: [
+			{ test: /\.jsx$/, include: /src/, loader: 'babel?stage=1' }
+    ]
+  },
   devServer: {
     host: process.env.IP || '0.0.0.0',
     port: process.env.PORT || 8080,
