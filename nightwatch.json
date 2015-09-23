@@ -1,0 +1,18 @@
+{
+  "src_folders": ["./tests/"],
+  "test_settings": {
+    "default": {
+			"selenium_host": "${SAUCELABS_HOST}",
+			"selenium_port": "${SAUCELABS_PORT}",
+			"username": "${SAUCELABS_USERNAME}",
+			"access_key": "${SAUCELABS_ACCESS_KEY}",
+			"launch_url": "${IP}",
+      "port": "${PORT}",
+			"desiredCapabilities": {
+				"browserName": "Chrome",
+				"javascriptEnabled": true,
+				"acceptSslCerts": true
+			}     
+    }
+  }
+}

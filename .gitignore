@@ -2,3 +2,5 @@ node_modules/*
 lib/*
 *.swp
 *.swo
+npm-debug.log
+tests_output/
