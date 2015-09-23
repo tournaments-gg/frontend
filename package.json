@@ -4,11 +4,14 @@
   "description": "The front-end for TournamentsGG",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "e2e": "nightwatch"
   },
   "authors": [
     "Dan Pantry <dan@lambdaexpression.io",
     "Alexander John Sims <alexander.sims92@gmail.com>"
   ],
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nightwatch": "^0.8.3"
+  }
 }
