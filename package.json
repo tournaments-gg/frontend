@@ -20,6 +20,7 @@
     "mocha": "^2.3.3",
     "nightwatch": "^0.8.3",
     "react-addons-test-utils": "^0.14.0-rc1",
+    "standard-loader": "^2.0.0",
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.11.0"
   },

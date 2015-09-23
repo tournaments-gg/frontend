@@ -23,7 +23,7 @@ module.exports = {
   ],
 	module: {
 		loaders: [
-			{ test: /\.jsx$/, include: /src/, loader: 'babel?stage=1' }
+			{ test: /\.jsx$/, include: /src/, loaders: ['babel?stage=1', 'standard'] }
     ]
   },
   devServer: {
