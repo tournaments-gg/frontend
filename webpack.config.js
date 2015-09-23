@@ -6,7 +6,7 @@ const CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin
 module.exports = {
   entry: {
     main: './src/index.jsx',
-    vendor: ['react']
+    vendor: ['react', 'react-dom']
   },
   output: {
     filename: '[name].[hash].js'
@@ -16,7 +16,10 @@ module.exports = {
   },
   plugins: [
     new CommonsChunkPlugin('vendor', 'vendor.js'),
-    new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin({
+			template: 'template.html',
+			inject: 'body'
+		})
   ],
 	module: {
 		loaders: [
