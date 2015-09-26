@@ -3,4 +3,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import UserSignupDialog from './membership/user-signup/dialog'
 
-ReactDOM.render(<UserSignupDialog />, document.getElementById('react'))
+const strategies = [
+  { id: 0, name: 'Facebook' }
+]
+
+ReactDOM.render(<UserSignupDialog strategies={strategies} />, document.getElementById('react'))
