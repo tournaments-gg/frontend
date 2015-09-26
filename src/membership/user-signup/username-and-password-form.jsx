@@ -1,26 +1,27 @@
 'use strict'
 import React from 'react'
+import Label from './label'
 
 export default React.createClass({
   render () {
     return <form>
       <div>
-        <label htmlFor='username'>Username</label>
+        <Label for='username' text={'Username'}/>
         <input type='text' name='username' />
       </div>
 
       <div>
-        <label htmlFor='password'>Password</label>
+        <Label for='password' text={'Password'} />
         <input type='password' name='password' />
       </div>
 
       <div>
-        <label htmlFor='email'>E-Mail</label>
+        <Label for='email' text={'E-Mail'} />
         <input type='email' name='email' />
       </div>
 
       <div>
-        <label htmlFor='termsAndConditions'>I agree to the terms and conditions</label>
+        <Label for='termsAndConditions' text={'I agree to the terms and conditions'} />
         <input type='checkbox' name='termsAndConditions' />
       </div>
     </form>
