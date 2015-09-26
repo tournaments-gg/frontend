@@ -7,17 +7,17 @@ export default React.createClass({
     return <form>
       <div>
         <Label for='username' text={'Username'} screenReaderOnly={true} />
-        <input type='text' name='username' />
+        <input type='text' name='username' placeholder='Username' />
       </div>
 
       <div>
-        <Label for='password' text={'Password'} />
-        <input type='password' name='password' />
+        <Label for='password' text={'Password'} screenReaderOnly={true} />
+        <input type='password' name='password' placeholder='Password' />
       </div>
 
       <div>
-        <Label for='email' text={'E-Mail'} />
-        <input type='email' name='email' />
+        <Label for='email' text={'E-Mail'} screenReaderOnly={true} />
+        <input type='email' name='email' placeholder='foo@example.com' />
       </div>
 
       <div>
