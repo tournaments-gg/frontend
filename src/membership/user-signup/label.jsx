@@ -22,7 +22,7 @@ export default React.createClass({
   render () {
     const label = <label style={style} htmlFor={this.props.for}>{this.props.text}</label>
 
-    if(this.props.screenReaderOnly) {
+    if (this.props.screenReaderOnly) {
       return <ScreenReaderOnly>{label}</ScreenReaderOnly>
     }
 

@@ -1,5 +1,5 @@
 'use strict'
-import React, {PropTypes, Children} from 'react'
+import React, {Children, PropTypes} from 'react'
 import Radium from 'radium'
 
 const style = {
@@ -9,6 +9,10 @@ const style = {
 }
 
 const ScreenReaderOnly = React.createClass({
+  propTypes: {
+    children: PropTypes.element.isRequired
+  },
+
   render () {
     const child = Children.only(this.props.children)
     // Is span really the best element here?
