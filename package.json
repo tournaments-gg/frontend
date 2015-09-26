@@ -27,6 +27,7 @@
     "webpack-dev-server": "^1.11.0"
   },
   "dependencies": {
+    "formsy-react": "^0.15.1",
     "lodash.uniqueid": "^3.0.0",
     "radium": "^0.14.1",
     "react": "^0.14.0-rc1",

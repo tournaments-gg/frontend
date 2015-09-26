@@ -13,6 +13,9 @@ module.exports = {
   },
   resolve: {
     extensions: ['', '.js', '.jsx'],
+    alias: {
+      'formsy-react': '../../src/main'
+    }
   },
   plugins: [
     new CommonsChunkPlugin('vendor', 'vendor.js'),
