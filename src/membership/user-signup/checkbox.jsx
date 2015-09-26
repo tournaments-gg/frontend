@@ -10,8 +10,12 @@ export default React.createClass({
   mixins: [Mixin],
   render () {
     return <div>
-      <input type='checkbox' name={this.props.name} value={this.getValue()} />
+      <input type='checkbox' name={this.props.name} onChange={this.onChange} value={this.getValue()} />
       {this.props.text}
     </div>
+  },
+
+  onChange (event) {
+    this.setValue(event.currentTarget.checked)
   }
 })
