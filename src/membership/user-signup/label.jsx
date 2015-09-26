@@ -8,6 +8,10 @@ export default React.createClass({
   },
 
   render () {
-    return <label htmlFor={this.props.for}>{this.props.text}</label>
+    const style = {
+      fontWeight: 'bold'
+    }
+
+    return <label style={style} htmlFor={this.props.for}>{this.props.text}</label>
   }
 })
