@@ -12,6 +12,7 @@ export default React.createClass({
       <Field type='email' name='email' label='E-Mail' />
       <Field type='password' name='password' label='Password' />
       <Checkbox name='tAndC' text='I agree to the terms and conditions.' />
+      <input type="submit" value="Sign Up" />
     </Form>
   }
 })
