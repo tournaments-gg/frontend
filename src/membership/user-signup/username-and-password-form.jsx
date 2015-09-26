@@ -6,10 +6,6 @@ import {Form} from 'formsy-react'
 
 export default React.createClass({
   render () {
-
-
-
-
     // TODO: Add a link to the T&C?
     return <Form>
       <Field type='text' name='username' label='Username' />
