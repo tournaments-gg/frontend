@@ -24,6 +24,8 @@ export default React.createClass({
         <Label for='termsAndConditions' text={'I agree to the terms and conditions'} />
         <input type='checkbox' name='termsAndConditions' />
       </div>
+
+      <input type="submit" value="Sign Up"/>
     </form>
   }
 })
