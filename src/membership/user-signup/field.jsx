@@ -13,7 +13,15 @@ export default React.createClass({
   render () {
     return <div>
       <Label for={this.props.name} text={this.props.label} screenReaderOnly />
-      <input type={this.props.type} name={this.props.name} value={this.getValue()} placeholder={this.props.label} />
+      <input type={this.props.type}
+        name={this.props.name}
+        value={this.getValue()}
+        onChange={this.onChange}
+        placeholder={this.props.label} />
     </div>
+  },
+
+  onChange (event) {
+    this.setValue(event.currentTarget.value)
   }
 })
