@@ -8,7 +8,7 @@ export default React.createClass({
 
   render () {
     return <div>
-      {this.props.strategies.map((strategy) => <button>{strategy.name}</button>)}
+      {this.props.strategies.map((strategy) => <button key={strategy.id}>{strategy.name}</button>)}
     </div>
   }
 })
