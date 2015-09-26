@@ -13,7 +13,7 @@ export default React.createClass({
 
   render () {
     // TODO: Add a link to the T&C?
-    return <Form onSubmit={this.submit} onValid={this.enableSubmit} onInvalid={this.disableSubmit} >
+    return <Form onSubmit={this.submit} onValid={this.enableSubmit} onInvalid={this.disableSubmit} noValidate>
       <Field type='text' name='username' label='Username' />
       <Field type='password' name='password' label='Password' />
       <Field type='password' name='confirmPassword' label='Confirm Password' />
