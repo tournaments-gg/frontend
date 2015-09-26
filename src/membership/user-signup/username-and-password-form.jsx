@@ -1,6 +1,6 @@
 'use strict'
 import React from 'react'
-import TextField from './text-field'
+import Field from './field'
 import {Form} from 'formsy-react'
 
 export default React.createClass({
@@ -10,7 +10,9 @@ export default React.createClass({
 
 
     return <Form>
-      <TextField name='username' label='Username' />
+      <Field type='text' name='username' label='Username' />
+      <Field type='email' name='email' label='E-Mail' />
+      <Field type='password' name='password' label='Password' />
     </Form>
   }
 })

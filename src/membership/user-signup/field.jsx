@@ -6,7 +6,8 @@ import Label from './label'
 export default React.createClass({
   propTypes: {
     label: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired
+    name: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired
   },
   mixins: [Mixin],
   render () {
