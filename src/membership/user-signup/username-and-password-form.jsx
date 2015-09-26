@@ -19,7 +19,7 @@ export default React.createClass({
       <Field type='password' name='confirmPassword' label='Confirm Password' />
       <Field type='email' name='email' label='E-Mail' />
       <Checkbox name='tAndC' text='I agree to the terms and conditions.' />
-      <input type="submit" value="Sign Up" disabled={this.state.submitDisabled} />
+      <input type='submit' value='Sign Up' disabled={this.state.submitDisabled} />
     </Form>
   },
 
