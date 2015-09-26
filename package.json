@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "lodash.uniqueid": "^3.0.0",
+    "radium": "^0.14.1",
     "react": "^0.14.0-rc1",
     "react-dom": "^0.14.0-rc1"
   }

@@ -6,7 +6,7 @@ export default React.createClass({
   render () {
     return <form>
       <div>
-        <Label for='username' text={'Username'}/>
+        <Label for='username' text={'Username'} screenReaderOnly={true} />
         <input type='text' name='username' />
       </div>
 
