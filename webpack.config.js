@@ -2,6 +2,7 @@
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin
+const path = require('path')
 
 module.exports = {
   entry: {
@@ -14,7 +15,10 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx'],
     alias: {
-      'formsy-react': '../../src/main'
+      // It is stupid that I need to do this, but this is because Formsy doesn't transpile
+      // its code in a prepublish step (for whatever reason), and also for some reason, src/main.js doesn't
+      // resolve correctly (even though it should)
+      'formsy-react': path.resolve(__dirname, 'node_modules/formsy-react/release/formsy-react.js')
     }
   },
   plugins: [
@@ -36,4 +40,3 @@ module.exports = {
     historyApiFallback: true
   }
 }
-
