@@ -12,9 +12,10 @@ export default React.createClass({
   },
 
   render () {
+    const usernameRegexp = /^[A-z0-9_-]*$/
     // TODO: Add a link to the T&C?
     return <Form onSubmit={this.submit} onValid={this.enableSubmit} onInvalid={this.disableSubmit} noValidate>
-      <Field type='text' name='username' label='Username' />
+      <Field type='text' name='username' label='Username' validations={{ matchRegexp: usernameRegexp, minLength: 3 }} required />
       <Field type='password'
         name='password'
         label='Password'
