@@ -16,7 +16,7 @@ export default function formsify (InputComponent) {
   return React.createClass({
     render () {
       return <Form>
-        {InputComponent}
+        <InputComponent />
       </Form>
     }
   })

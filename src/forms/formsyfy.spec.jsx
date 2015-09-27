@@ -20,6 +20,6 @@ describe('formsyfy', function () {
 
     const renderedComponent = shallowRender(<FormsyfiedComponent />)
 
-    assert.deepEqual(renderedComponent.props.children, InputComponent)
+    assert.deepEqual(renderedComponent.props.children, <InputComponent/>)
   })
 })
