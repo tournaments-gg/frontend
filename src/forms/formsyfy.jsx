@@ -12,8 +12,12 @@ import {Form} from 'formsy-react'
  * @param  {ReactElement}
  * @return {ReactElement}
  */
-export default function formsify (component) {
-  return <Form>
-    {component.props.children}
-  </Form>
+export default function formsify (InputComponent) {
+  return React.createClass({
+    render () {
+      return <Form>
+        {InputComponent}
+      </Form>
+    }
+  })
 }
