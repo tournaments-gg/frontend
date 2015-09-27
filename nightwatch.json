@@ -1,5 +1,6 @@
 {
-  "src_folders": ["./tests/"],
+  "src_folders": ["./e2e/tests/"],
+  "page_objects_path": ["./e2e/pages"],
   "test_settings": {
     "default": {
 			"selenium_host": "${SAUCELABS_HOST}",
