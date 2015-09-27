@@ -2,7 +2,8 @@
 import React from 'react'
 
 export default React.createClass({
-  render() {
+  displayName: 'UserSignupForm',
+  render () {
     return <form></form>
   }
 })
