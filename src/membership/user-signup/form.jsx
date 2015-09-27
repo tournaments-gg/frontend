@@ -9,7 +9,7 @@ export default React.createClass({
       <input name='password' type='password' />
       <input name='confirmPassword' type='password' />
       <input name='email' type='email' />
-      <input name='submit' type='submit' />
+      <input type='submit' />
     </form>
   }
 })

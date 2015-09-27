@@ -19,7 +19,7 @@ describe('user signup form', function () {
       <input name='password' type='password' />,
       <input name='confirmPassword' type='password' />,
       <input name='email' type='email' />,
-      <input name='submit' type='submit' />
+      <input type='submit' />
     ])
   })
 })
