@@ -9,7 +9,8 @@ module.exports = {
     vendor: ['react', 'react-dom']
   },
   output: {
-    filename: '[name].[hash].js'
+    filename: '[name].[hash].js',
+    publicPath: '/'
   },
   resolve: {
     extensions: ['', '.js', '.jsx'],
