@@ -4,7 +4,7 @@ import React from 'react'
 export default React.createClass({
   displayName: 'UserSignupForm',
   render () {
-    return <form>
+    return <form method='POST'>
       <input name='username' type='text' />
       <input name='password' type='password' />
       <input name='confirmPassword' type='password' />

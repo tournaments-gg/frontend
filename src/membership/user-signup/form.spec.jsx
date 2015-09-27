@@ -11,6 +11,12 @@ describe('user signup form', function () {
     assert.equal(component.type, 'form')
   })
 
+  it('should be POSTed', function () {
+    const component = shallowRender(Form)
+
+    assert.equal(component.props.method, 'POST')
+  })
+
   it('should render fields', function () {
     const component = shallowRender(Form)
 
